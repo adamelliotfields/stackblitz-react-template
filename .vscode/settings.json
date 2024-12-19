@@ -1,0 +1,27 @@
+{
+  "editor.rulers": [100],
+
+  // performance
+  "files.exclude": {
+    "node_modules/**": true,
+    "dist/**": true,
+  },
+  "files.watcherExclude": {
+    "node_modules/**": true,
+    "dist/**": true,
+  },
+
+  // tailwind
+  "editor.quickSuggestions": { "strings": "on" },
+  "files.associations": { "*.css": "tailwindcss" },
+  "tailwindCSS.classAttributes": ["class", "className"],
+
+  // eslint
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "quickfix.eslint": "explicit"
+    }
+  }
+}
